@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Involved — Agape Connected Foundation</title>
+  <meta name="description" content="Volunteer, donate, or partner with us. Every act of love multiplies." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/get_involved.css" />
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar navbar-expand-lg" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Agape<span>Connected</span> Foundation</a>
+      <button class="navbar-toggler border-0" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMain"
+        aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#who">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link active" href="get_involved.html">Get Involved</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#donate" class="nav-link btn-donate-nav ms-lg-3">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════ PAGE HERO ══════════════ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-7">
+          <div class="page-eyebrow fade-up">Get involved</div>
+          <h1 class="fade-up delay-1">You're the missing piece.</h1>
+          <p class="page-sub fade-up delay-2">
+            There are three ways to walk with us — give, serve, or partner.<br class="d-none d-md-block" />
+            Pick the one that fits your season.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ THREE WAYS ROW ══════════════ -->
+  <section class="ways-row">
+    <div class="container">
+      <div class="row g-0 justify-content-center">
+        <div class="col-md-4 way-item fade-up">
+          <div class="way-number">01</div>
+          <div class="way-label">Give</div>
+        </div>
+        <div class="col-md-4 way-item fade-up delay-1">
+          <div class="way-number">02</div>
+          <div class="way-label">Serve</div>
+        </div>
+        <div class="col-md-4 way-item fade-up delay-2">
+          <div class="way-number">03</div>
+          <div class="way-label">Partner</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ MAIN CONTENT ══════════════ -->
+  <section class="main-content">
+    <div class="container">
+      <div class="row g-5 justify-content-center">
+
+        <!-- ── LEFT COLUMN ── -->
+        <div class="col-lg-7">
+
+          <!-- DONATE CARD -->
+          <div class="content-card fade-up" id="donate">
+            <div class="card-eyebrow"><i class="bi bi-heart-fill"></i> Donate</div>
+            <h2>Every rand goes to work.</h2>
+            <p class="card-sub">
+              Every rand goes directly to programs.
+            </p>
+
+            <!-- Amount selector -->
+            <div class="amount-grid" id="amountGrid">
+              <button class="amount-btn" data-amount="25">R20</button>
+              <button class="amount-btn active" data-amount="50">R50</button>
+              <button class="amount-btn" data-amount="100">R100</button>
+              <button class="amount-btn" data-amount="250">R200</button>
+            </div>
+
+            <!-- Custom amount -->
+            <div class="custom-amount-wrap">
+              <span class="currency-symbol">$</span>
+              <input
+                type="number"
+                id="customAmount"
+                class="custom-amount-input"
+                placeholder="Enter custom amount"
+                min="1"
+              />
+            </div>
+
+            <!-- Frequency toggle -->
+            <!-- <div class="freq-toggle" id="freqToggle">
+              <button class="freq-btn active" data-freq="once">Give Once</button>
+              <button class="freq-btn" data-freq="monthly">Give Monthly</button>
+            </div> -->
+
+            <button class="btn-donate-main" id="donateBtn">
+              Donate <span id="donateBtnAmount">R50</span>
+            </button>
+
+            <p class="secure-note">
+              <i class="bi bi-shield-lock-fill"></i> Secure payment &nbsp;&nbsp;
+              <!-- <i class="bi bi-award-fill"></i> Tax-deductible receipt emailed automatically -->
+            </p>
+          </div>
+
+          <!-- VOLUNTEER CARD -->
+          <div class="content-card fade-up" id="volunteer">
+            <div class="card-eyebrow"><i class="bi bi-people-fill"></i> Volunteer with us.</div>
+            <h2>There's a place for you.</h2>
+            <p class="card-sub">
+              Whether you have one hour a month or every Saturday — we'd love to have you on the ground with us.
+            </p>
+
+            <form id="volunteerForm" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label class="form-label-custom" for="vFirstName">First name</label>
+                  <input type="text" id="vFirstName" class="form-input-custom" placeholder="Amara" required />
+                  <div class="field-error" id="vFirstNameErr">Please enter your first name.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label-custom" for="vLastName">Last name</label>
+                  <input type="text" id="vLastName" class="form-input-custom" placeholder="Okafor" required />
+                  <div class="field-error" id="vLastNameErr">Please enter your last name.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label-custom" for="vEmail">Email address</label>
+                  <input type="email" id="vEmail" class="form-input-custom" placeholder="you@example.com" required />
+                  <div class="field-error" id="vEmailErr">Please enter a valid email address.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label-custom">I'm interested in…</label>
+                  <div class="interest-grid" id="interestGrid">
+                    <label class="interest-chip">
+                      <input type="checkbox" value="Food Drives" /> Food Drives
+                    </label>
+                    <label class="interest-chip">
+                      <input type="checkbox" value="Education Support" /> Education Support
+                    </label>
+                    <label class="interest-chip">
+                      <input type="checkbox" value="Community Outreach" checked /> Community Outreach
+                    </label>
+                    <label class="interest-chip">
+                      <input type="checkbox" value="Event Volunteering" /> Event Volunteering
+                    </label>
+                  </div>
+                  <div class="field-error" id="vInterestErr">Please select at least one area.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label-custom" for="vAvailability">Availability</label>
+                  <select id="vAvailability" class="form-input-custom form-select-custom">
+                    <option value="" disabled selected>Select your availability</option>
+                    <option>Once a month</option>
+                    <option>Twice a month</option>
+                    <option>Every Saturday</option>
+                    <option>Weekdays only</option>
+                    <option>Flexible</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-submit mt-4" id="volunteerBtn">
+                <span class="btn-text">Sign me up</span>
+                <span class="btn-spinner d-none"><i class="bi bi-arrow-clockwise spin"></i></span>
+              </button>
+            </form>
+
+            <!-- Success message -->
+            <div class="success-message d-none" id="volunteerSuccess">
+              <i class="bi bi-check-circle-fill"></i>
+              <strong>You're in!</strong> We'll be in touch soon with next steps.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── RIGHT COLUMN ── -->
+        <div class="col-lg-4 col-md-10">
+
+          <!-- IMPACT SIDEBAR -->
+          <!-- <div class="sidebar-card impact-card fade-up delay-1">
+            <div class="sidebar-eyebrow">Your impact</div>
+            <div class="impact-row">
+              <div class="impact-amount">R25</div>
+              <div class="impact-desc">Buys loaf of Bread</div>
+            </div>
+            <div class="impact-divider"></div>
+            <div class="impact-row">
+              <div class="impact-amount">R50</div>
+              <div class="impact-desc">provides school supplies for one child</div>
+            </div>
+            <div class="impact-divider"></div>
+            <div class="impact-row">
+              <div class="impact-amount">R100</div>
+              <div class="impact-desc">covers emergency shelter for a night</div>
+            </div>
+            <div class="impact-divider"></div>
+            <div class="impact-row">
+              <div class="impact-amount">R200</div>
+              <div class="impact-desc"></div>
+            </div>
+          </div> -->
+
+          <!-- PARTNER CARD -->
+          <div class="sidebar-card partner-card fade-up delay-2" id="partner">
+            <div class="sidebar-eyebrow"><i class="bi bi-building"></i> For organizations &amp; churches.</div>
+            <h3>Put compassion into action.</h3>
+            <p>
+              We partner with companies, congregations, and community groups who want to make a real difference. Co-branded campaigns, employee giving, in-kind support, and field service days.
+            </p>
+            <ul class="partner-list">
+              <li><i class="bi bi-check-circle-fill"></i> Corporate giving programs</li>
+              <li><i class="bi bi-check-circle-fill"></i> Volunteer field days for your team</li>
+              <li><i class="bi bi-check-circle-fill"></i> Faith-based community partnerships</li>
+              <li><i class="bi bi-check-circle-fill"></i> In-kind donations &amp; supply drives</li>
+            </ul>
+            <a href="mailto:hello@agapeconnected.org" class="btn-partner">
+              <i class="bi bi-envelope-fill"></i> Get in touch
+            </a>
+          </div>
+
+          <!-- TRUST BADGES -->
+          <div class="trust-card fade-up delay-3">
+            <div class="trust-row">
+              <i class="bi bi-shield-check"></i>
+              <span>Registered non-profit organisation</span>
+            </div>
+            <div class="trust-row">
+              <i class="bi bi-award"></i>
+              <span>94% of donations reach programs</span>
+            </div>
+            <div class="trust-row">
+              <i class="bi bi-receipt"></i>
+              <span>Tax-deductible receipts issued</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="brand">Agape<span>Connected</span> Foundation</div>
+          <div class="tagline">Connected by Love</div>
+          <p class="desc">
+            We exist to spread unconditional love through community support, youth empowerment, and humanitarian outreach — one neighbor at a time.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 offset-lg-2">
+          <h6>Explore</h6>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <h6>Connect</h6>
+          <ul>
+            <li><a href="mailto:hello@agapeconnected.org">hello@agapeconnected.org</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+        <span>© 2026 Agape Connected Foundation. All rights reserved.</span>
+        <span>Registered non-profit organization.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/get_involved.js"></script>
+</body>
+</html>

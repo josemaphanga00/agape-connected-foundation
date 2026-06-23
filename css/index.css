@@ -698,6 +698,29 @@ footer ul li a:hover {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* Built By */
+.built-by {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.succulent-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #ff4d4d;
+  transition: all 0.3s ease;
+}
+
+.succulent-link span {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.succulent-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 77, 77, 0.7);
+}
+
 .social-icon {
   width: 36px;
   height: 36px;
